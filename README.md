@@ -1,2 +1,7 @@
 # react-core
-react源码
+
+react 源码
+
+## 技术栈
+
+pnpm+vite
