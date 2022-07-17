@@ -2,15 +2,22 @@
  * @Author: 朽木白
  * @Date: 2022-06-12 19:12:11
  * @LastEditors: 1547702880@qq.com
- * @LastEditTime: 2022-07-17 17:06:26
+ * @LastEditTime: 2022-07-17 22:11:21
  * @Description:
  */
-import { ReactDOM, Component } from '../lib/index';
+import { ReactDOM, Component, useReducer, useState } from '../lib/index';
 import './index.css';
 function FunctionComponent(props) {
+  const [count, setCount] = useReducer((x) => x + 1, 0);
+  const [count2, setCount2] = useState(1);
+
   return (
     <div className='border'>
       <h3>{props.name}</h3>
+      <button onClick={() => setCount()}>{count}</button>{' '}
+      {count % 2 ? <span>show</span> : <span>hide</span>}
+      <br />
+      <button onClick={() => setCount2(count2 + 1)}>{count2}</button>
     </div>
   );
 }
