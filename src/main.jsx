@@ -2,7 +2,7 @@
  * @Author: 朽木白
  * @Date: 2022-06-12 19:12:11
  * @LastEditors: 1547702880@qq.com
- * @LastEditTime: 2022-07-16 14:03:21
+ * @LastEditTime: 2022-07-17 17:06:26
  * @Description:
  */
 import { ReactDOM, Component } from '../lib/index';
